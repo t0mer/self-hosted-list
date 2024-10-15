@@ -145,3 +145,11 @@ phpmyadmin:
 * [Botami](https://github.com/t0mer/Botami4) - Control Tami4 Edge using telegram bot.
 * [weathy](https://github.com/t0mer/weathy) - Daily forecast telegram bot.
 * [DeOldify](https://github.com/t0mer/DeOldify) - Bring the color back for old pictures.
+
+
+### Home Autmation
+* [Home-assistant](https://www.home-assistant.io/) - Open source home automation that puts local control and privacy first. 
+* [broadlinkmanager](https://github.com/t0mer/broadlinkmanager-docker) - contorol your broadlink devices.
+* [tasmota admin](https://tasmota.github.io/docs/TasmoAdmin/) -  administrative Website for Devices flashed with Tasmota.
+* [xiaomi token extractor](https://github.com/t0mer/Xiaomi-Token-Extractor) - Extract your xiaomi devices token.
+* [adb api](https://github.com/t0mer/adb-api) - control android-based streamers like Xiaomi and more
