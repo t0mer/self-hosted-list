@@ -137,3 +137,11 @@ phpmyadmin:
       - /etc/localtime:/etc/localtime:ro 
 
 ```
+
+### Bots
+* [Red Aler](https://github.com/t0mer/Redalert) - Pikud Haoref alerts
+* [Wazy](https://github.com/t0mer/Wazy) - checking travel times using Waze.
+* [Wassist](https://github.com/t0mer/WAssist) - Whatsapp based personal assistant.
+* [Botami](https://github.com/t0mer/Botami4) - Control Tami4 Edge using telegram bot.
+* [weathy](https://github.com/t0mer/weathy) - Daily forecast telegram bot.
+* [DeOldify](https://github.com/t0mer/DeOldify) - Bring the color back for old pictures.
