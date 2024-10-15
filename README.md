@@ -77,7 +77,7 @@ services:
     #finished product overlayed on top of it.  As such, changes you make to data in an image is really happening
     #in yet another delta layer on top of the rest.  This layer is considered temporary and really only something
     #you use if you're building your own image from an existing one as a base.  Any data you need to persist
-    #should be stored in a Docker volume.  Docker volums can either be named storage locations that can be defined
+    #should be stored in a Docker volume.  Dock- er volums can either be named storage locations that can be defined
     #here in the compose file, or bind mounts to directories on the host machine both of which you can use
     #to store data that persists between runs of a container and can be shared between multipe containers.
     #see https://docs.docker.com/compose/compose-file/#volumes for more information
@@ -152,4 +152,17 @@ phpmyadmin:
 * [broadlinkmanager](https://github.com/t0mer/broadlinkmanager-docker) - contorol your broadlink devices.
 * [tasmota admin](https://tasmota.github.io/docs/TasmoAdmin/) -  administrative Website for Devices flashed with Tasmota.
 * [xiaomi token extractor](https://github.com/t0mer/Xiaomi-Token-Extractor) - Extract your xiaomi devices token.
-* [adb api](https://github.com/t0mer/adb-api) - control android-based streamers like Xiaomi and more
+* [adb api](https://github.com/t0mer/adb-api) - control android-based streamers like Xiaomi and more.
+[tasmota-thingsboard-daemon](https://github.com/t0mer/tasmota-thingsboard-daemon/) - bridge between tasmota devices and ThingsBoard server.
+
+### AI
+* [deepstack](https://github.com/johnolafenwa/DeepStack/) - The World's Leading Cross Platform AI Engine for Edge Devices.
+* [deepstack trainer](https://github.com/t0mer/deepstack-trainer).
+* [deepstack ui](https://medium.com/deepquestai/deepstack-ui-object-detection-with-zero-code-e4e6f1bf8ba4) - interactive web application built by Robin Cole . It allows anyone to run any image through DeepStack’s object detection API.
+* [CodeProject.AI](https://www.codeproject.com/Articles/5322557/CodeProject-AI-Server-AI-the-easy-way) - self-hosted, fast, free and Open Source Artificial Intelligence server.
+
+### Media
+* [plex](https://www.plex.tv/) - free movies & TV with the best free streaming services.
+* [tautulli](https://tautulli.com/) - Monitor your Plex Media Server.
+* [Conreq](https://github.com/Archmonger/Conreq) - A content requesting platform.
+
