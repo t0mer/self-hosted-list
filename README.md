@@ -96,3 +96,44 @@ At home, I have many services and applications for Media managment, Home automat
 * [Safeline](https://github.com/chaitin/SafeLine) WAF and Reverse proxy.
 * [Chrony](https://github.com/dockur/chrony) - selfhosted NTP server.
 * [postfix-relay](https://medium.com/@tomer.klein/ntp-server-on-docker-keeping-your-devices-in-perfect-sync-2d2447b1d039) - selfhosted mail-relay
+* [Mosquitto](https://medium.com/@tomer.klein/docker-compose-and-mosquitto-mqtt-simplifying-broker-deployment-7aaf469c07ee) MQTT Broker.
+* [AdGuardHome](https://medium.com/@tomer.klein/protecting-your-digital-world-adguard-home-installation-and-configuration-59db9902b1a0) - DNS, Paental control and Add blocker.
+* [PiAlert](https://github.com/jokob-sk/NetAlertX/blob/main/docs/MIGRATION.md) - WIFI / LAN intruder detector.
+* *mysql database*
+```yaml
+  mysql:
+    container_name: mysql
+    image: mariadb:latest
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    labels:
+      - "com.ouroboros.enable=true"
+      - "traefik.enable=false"
+    volumes:
+      - "./mysql:/var/lib/mysql"
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+```
+* *phpmyadmin*
+```yaml
+phpmyadmin:
+    hostname: phpmyadmin
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    links:
+      - mysql
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=${PMA_HOST:?Please copy template.env to .env and provide provide a value for PMA_HOST}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    labels:
+      - "com.ouroboros.enable=true"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro 
+
+```
